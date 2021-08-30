@@ -1,0 +1,555 @@
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Noli Web</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.9.3, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <link id="u-theme-google-font" rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="img/noli_sonriente.png">
+
+     <script>
+
+
+        $(document).ready(function hol(e) {
+
+            $("#imgAnimate").hover(
+
+
+                function () {
+                    $(this).attr("src", "img/suscribete.gif");
+                   $(this).attr("height", "155px");
+                   $(".padding-nav").addClass("nav");
+                    $(this).addClass("cosa");
+               
+             }
+
+            );
+
+            $( "#imgAnimate" ).mouseleave(function() {
+                setTimeout(function(){
+                    $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                    $(".padding-nav").removeClass("nav");
+                    $("#imgAnimate").removeClass("cosa");            
+                        },5000);
+                
+
+            });
+            function changeImg() {
+                 
+                
+                /*     $("#imgAnimate").removeClass("wea") */
+               /*      $(this).addClass("wea2"); */
+
+
+                
+            }
+
+
+
+        });
+
+        
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('.zoom').hover(function () {
+                $(this).addClass('transition');
+            }, function () {
+                $(this).removeClass('transition');
+            });
+        });
+
+
+
+    </script>
+<script>
+    const suscribete = document.getElementById('#imgAnimate');
+    suscribete.addEventListener("mouseleave", e =>{
+        suscribete.style.border="1px solid #333";
+
+    });
+
+</script>
+</head>
+
+
+<body id="body">
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <a href="index.html"><img class="log1" style="padding-left: 120px;" src="images/logo1.png" alt=""></a>
+
+        <a href="#"><img style="height: 20px; margin-top: 37px;" src="images/nav1/english.png" alt=""></a>
+
+    </header>
+
+    <!-- NAV1 -->
+    <nav class="nav1">
+        <ul>
+
+            <li><a href="LaTiendita.html"><img style="height: 32px; " class="padding-nav zoom" src="images/nav1/latiendita.png" alt=""></a></li>
+            <li><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/archivos.png" alt=""> </a></li>
+        
+                                <!-- BUTTON ---------------------------------------------------------------------------->
+            <li style="margin-left: 2.5rem; background-color: transparent;" >
+          <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
+                     <button style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;" id="btn-abrir-popup3">
+                          <img  style="margin-bottom: -4px;" height="155px"  class="zoom content" id="imgAnimate"  src="img/nav1/Suscribetes2.png" alt="">
+                      </button> 
+            </li>
+
+            <li style="margin-left: 40px;" ><a  href="Blog.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
+
+            <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/elautor.png" alt=""></a></li>
+            <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/contacto.png" alt=""></a></li>
+            <li>
+            </li>
+        </ul>
+
+    </nav>
+    <div id="ex1" class="containerPersonaje">
+        <!-- fondo -->
+        <div id="ex2-layer" class="bg mover">
+
+            <img id="f0" data-value="8" class="object f0 " src="images/BG2.jpg" alt="">
+
+        </div>
+
+
+        <!-- personaje -->
+        <div id="ex1-layer" class="box">
+
+            <div class="para">
+
+                <img id="personaje" class="mover per object" data-value="-2" src="img/HOMEParalaxIllustration/personaje2C.png" alt="">
+
+            </div>
+
+        </div>
+        <!-- texturafrontal -->
+        <div class="text">
+
+            <img src="img/HOMEParalaxIllustration/TexturaYFondo.png" alt="">
+
+        </div>
+<!-- MANCHAS -->
+        <div class="manchasGenerales">
+
+            <div class="manchasTop" style="">
+
+                <div class="mroja">
+                    <button  id="btn-abrir-popup" class="btnRojo">
+
+
+                    </button>
+                    <img src="img/HOMEParalaxIllustration/ManchaRoja2.png" alt="">
+                </div>
+
+                <div class="mblanca">
+                    <button id="btn-abrir-popup2" class="btnBlanca"></button>
+                    <img src="img/HOMEParalaxIllustration/ManchaBlanco2.png" alt="">
+                </div>
+
+            </div>
+
+
+            <div class="manchasBot">
+                <div class="mverde"><a target="_blank" href="https://www.instagram.com/juan.araya.art/">
+                        <img src="img/HOMEParalaxIllustration/ManchaVerde2.png" alt=""></a>
+                </div>
+                <div class="mazul">
+                    <a target="_blank" href="https://gumroad.com/juanarayaart/">
+                        <img src="img/HOMEParalaxIllustration/ManchaAzul2.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+
+          
+
+
+
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer" >
+        <div class="pay">
+
+        </div>
+
+        <div class="rrss">
+            <a target="_blank" href="https://www.instagram.com/juan.araya.art/"><img src="images/Instagram.png"
+                    alt=""></a>
+            <a target="_blank" href="https://www.facebook.com/juanarayaartJAP/"><img src="images/Facebook.png"
+                    alt=""></a>
+            <a target="_blank" href="https://twitter.com/JuanArayaArt"><img src="images/Twitter.png" alt=""></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UC_4CZDI8-IIjxmhOUv7Ytbg"><img
+                    src="images/Youtube.png" alt=""></a>
+            <a target="_blank" href="https://vimeo.com/juanarayaart"><img src="images/Vimeo.png" alt=""></a>
+            <a target="_blank" href="https://www.linkedin.com/in/puralinea/"><img src="images/Linkedin.png" alt=""></a>
+
+
+        </div>
+        <div>
+            <p>Juan Araya @copy 2020 All rights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!-- 
+                                <div id="container" class="container">
+                                    <img id="f0" data-value="5" class="object f0 " src="images/BG.jpg" alt="">
+
+                                    <div class="rotate container">
+                                        <img id="imgpersonaje" data-value="-2" class="object imgpersonaje "
+                                            src="img/HOMEParalaxIllustration/personaje2.png">
+                                    </div>
+
+                                </div>
+
+                        </div>
+                    -->
+
+
+
+
+
+    <!--                    <img class="f0" src="images/BG.jpg" alt="">
+                                -->
+
+
+    <div class="overlay" id="overlay">
+        <div class="popup" id="popup">
+            <a href="index.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i id="close" class="close fas fa-times"></i></a>
+            <div id="myVideo" class="video-responsive video" style="display: flex;">
+
+                <iframe id="video1" title="vimeo-player1" src="https://player.vimeo.com/video/281459397" width="1000" height="600"
+                    frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+        <script class="btn" src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> hihh</script>
+
+        <script>
+            kofiWidgetOverlay.draw('nolicomic', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#5bc0de',
+                'floating-chat.donateButton.text-color': '#323842',
+
+            });
+        </script>
+
+    </div>
+    <script src="popup.js"></script>
+
+    <div class="overlay2" id="overlay2">
+
+        <div class="popup2" id="popup2">
+
+            <a href="index.html" id="btn-cerrar-popup2" class="btn-cerrar-popup2">
+                <i class="close2 fas fa-times"></i></a>
+            <div class="video" style="display: flex;">
+                <div class="rsvideo" style="display: flex; flex-direction: column;">
+                    <a target="_blank" href="https://ko-fi.com/nolicomic"><img src="images/RedesSociales/Noli/KoFi.png"
+                            alt=""></a>
+                    <a target="_blank" href="https://www.instagram.com/noli_chile"><img
+                            src="images/RedesSociales/Noli/Instagram.png" alt=""></a>
+                    <a target="_blank" href="https://twitter.com/ComicsNoli"><img
+                            src="images/RedesSociales/Noli/Twitter.png" alt=""></a>
+                    <a target="_blank" href="https://www.facebook.com/NoliComics"><img
+                            src="images/RedesSociales/Noli/Facebook.png" alt=""></a>
+                    <a target="_blank" href="https://nolicomics.tumblr.com"><img
+                            src="images/RedesSociales/Noli/Tumblr.png" alt=""></a>
+                    <a target="_blank" href="https://www.tiktok.com/@noli_chile?lang=es"><img
+                            src="images/RedesSociales/Noli/TikTok.png" alt=""></a>
+                </div>
+                <iframe class="video2" title="vimeo-player2" src="https://player.vimeo.com/video/525936461" width="1000"
+                    height="600" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <script src="popup.js"></script>
+
+        </div>
+        <script  src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> </script>
+
+        <script>
+            kofiWidgetOverlay.draw('nolicomic', {
+                'type': 'floating-chat',
+                'floating-chat.donateButton.text': 'Support me',
+                'floating-chat.donateButton.background-color': '#5bc0de',
+                'floating-chat.donateButton.text-color': '#323842',
+
+            });
+        </script>
+    </div>
+    <!-- OVERLAY 3 -->
+    <div class="overlay3" id="overlay3">
+        <div class="popup3" id="popup3">
+            <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="close fas fa-times"></i></a>
+            <div style="display: flex; justify-content: center; flex-direction: row;">
+
+                <div>
+                    <div style="display: flex;justify-content: center;">
+                        <h2 style="color:lightblue">Obten mi ebook Gratis</h2>
+                    </div>
+                    <div>
+                        <p style="color: white; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                            iure! Esse cum iusto eius? Suscipit unde aliquam quis, quisquam, quam ipsum exercitationem
+                            consectetur quia explicabo voluptas possimus expedita impedit doloremque!</p>
+                    </div>
+                    <div style=" margin-left: 50%; display: flex; justify-content: right;">
+                        <form class="form" action=""
+                            style="display: flex;justify-content: right; flex-direction: column; color: lightblue; width: 500px;">
+
+
+                            <input style="font-family: 'Comic Neue', cursive;" type="text"
+                                placeholder="Ingresa tu Nombre">
+
+                            <br><br>
+                            <input style="font-family: 'Comic Neue', cursive;" type="text"
+                                placeholder="Ingresa tu email">
+                            <br><br>
+                            <textarea style="font-family: 'Comic Neue', cursive; font-size: 16px;" name="" id=""
+                                cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
+                            <br><br>
+                            <button style="color: black; font-weight: bold;" class="button1">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                    <div>
+                        <img style="margin-top: -41.5%;" height="400px" src="img/Animación/Gif_ES/Preview.gif" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script src="popup.js"></script>
+    <script>
+
+
+    </script>
+
+
+
+</body>
+
+</html>
+<!-- <script>
+
+    const videos = document.querySelectorAll('iframe');
+    const videos2 = document.querySelectorAll('iframe');
+
+    const close = document.querySelector('.close');
+    const close2 = document.querySelector('.close2');
+
+
+    close.addEventListener('click', () => {
+        videos.forEach(i => {
+            let source = i.src;
+            i.src = '';
+            i.src = source;
+        });
+    });
+
+
+    close2.addEventListener('click', () => {
+        videos2.forEach(i => {
+            let source = i.src;
+            i.src = '';
+            i.src = source;
+        });
+    });
+
+</script> -->
+
+
+<script src="scale.js"></script>
+
+<!-- ROTATEEEE -->
+<script>
+    let constrain = 70;
+    let mouseOverContainer = document.getElementById("ex1");
+    let ex1Layer = document.getElementById("ex1-layer");
+
+    function transforms(x, y, el) {
+        let box = el.getBoundingClientRect();
+        let calcX = -(y - box.y - (box.height / 2)) / constrain;
+        let calcY = (x - box.x - (box.width / 2)) / constrain;
+
+        return "perspective(3800px) "
+            + "   rotateX(" + calcX + "deg) "
+            + "   rotateY(" + calcY + "deg) ";
+    };
+
+    function transformElement(el, xyEl) {
+        el.style.transform = transforms.apply(null, xyEl);
+    }
+
+    mouseOverContainer.onmousemove = function (e) {
+        let xy = [e.clientX, e.clientY];
+        let position = xy.concat([ex1Layer]);
+
+        window.requestAnimationFrame(function () {
+            transformElement(ex1Layer, position);
+        });
+    };
+
+
+
+</script>
+
+<!-- ROTATE BG -->
+
+<script>
+    // shim layer with setTimeout fallback
+    window.requestAnimFrame = (function () {
+        return window.requestAnimationFrame ||
+            window.webkitRequestAnimationFrame ||
+            window.mozRequestAnimationFrame ||
+            function (callback) {
+                window.setTimeout(callback, 1000 / 60);
+            };
+    })();
+
+    /**
+     * Helper to translate element
+     *
+     */
+    function rotate(element, x, y) {
+
+        //Set defaults
+        var t = 'rotateX(' + x * 35 + 'deg) rotateY(' + y * 35 + 'deg)';
+
+        // Code for Chrome, Safari, Opera
+        element.style.WebkitTransform = t;
+        // Code for IE9
+        element.style.msTransform = t;
+        // Standard syntax
+        element.style.transform = t;
+    }
+
+    var movers = document.querySelectorAll('.mover'),
+        lastX = 0,
+        lastY = 0,
+        ticking = false;
+
+    /**
+     * Callback for our scroll event - just
+     * keeps track of the last scroll value
+     */
+    function onMouseMove(e) {
+        lastX = e.clientX;
+        lastY = e.clientY;
+        requestTick();
+    }
+
+    /**
+     * Calls rAF if it's not already
+     * been done already
+     */
+    function requestTick() {
+        if (!ticking) {
+            requestAnimationFrame(update);
+            ticking = true;
+        }
+    }
+
+    /**
+     * Our animation callback
+     */
+    function update() {
+        var mover = movers[0],
+            rotationX = (lastX / window.innerWidth) - 0.5,
+            rotationY = (lastY / window.innerHeight) - 0.5;
+
+        rotate(mover, rotationY, rotationX * -1);
+
+
+        ticking = false;
+    }
+
+    // only listen for scroll events
+    window.addEventListener('mousemove', onMouseMove, false);
+
+    update();
+</script>
+
+
+
+
+
+<!-- PARALLAX -->
+<script type="text/javascript">
+    document.addEventListener("mousemove", parallax);
+    function parallax(e) {
+        document.querySelectorAll(".object").forEach(function (move) {
+
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) / - 280;
+            var y = (e.clientY * moving_value) / - 280;
+
+            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+    }
+
+
+
+
+</script>
+<script>
+
+    const videos = document.querySelectorAll('iframe');
+    const videos2 = document.querySelectorAll('iframe');
+
+    const close = document.querySelector('.close');
+    const close2 = document.querySelector('.close2');
+
+
+    close.addEventListener('click', () => {
+        videos.forEach(i => {
+            let source = i.src;
+            i.src = '';
+            i.src = source;
+        });
+    });
+
+
+    close2.addEventListener('click', () => {
+        videos2.forEach(i => {
+            let source = i.src;
+            i.src = '';
+            i.src = source;
+        });
+    });
+
+</script>

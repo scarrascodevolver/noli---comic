@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Noli Web</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+  <link rel="stylesheet/less" type="text/css" href="Comic.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap"
+      rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="shortcut icon" href="img/noli_sonriente.png">
+  <script>
+      $(document).ready(function () {
+          $('.zoom').hover(function () {
+              $(this).addClass('transition');
+          }, function () {
+              $(this).removeClass('transition');
+          });
+      });
+  </script>
+
+
+</head>
+<body>
+      <img class="f1" src="images/TexturaYFondo.png" alt="">
+      <div class="headerynav">
+        <header class="header">
+
+            <a href="index.html"><img style="padding-left: 120px;" src="images/logo1.png" alt=""></a>
+
+            <img style="height: 20px; padding-top: 40px;" src="images/nav1/english.png" alt="">
+
+        </header>
+          <!-- NAV1 -->
+          <nav class="nav1">
+            <ul>
+
+                <li><a href="LaTiendita.html"><img style="height: 32px; " class="padding-nav zoom"
+                            src="images/nav1/latiendita.png" alt=""></a></li>
+                <li><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom"
+                            src="images/nav1/archivos.png" alt=""> </a></li>
+
+                <!-- BUTTON ---------------------------------------------------------------------------->
+                <li style="margin-left: 2.5rem; background-color: transparent;">
+                    <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
+                    <button onclick="hola()"
+                        style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;"
+                        id="btn-abrir-popup3">
+                        <img style="margin-bottom: -4px;" height="155px" class="zoom content" id="imgAnimate"
+                            src="img/nav1/Suscribetes2.png" alt="">
+                    </button>
+                </li>
+
+                <li style="margin-left: 40px;"><a href="Blog.html"><img style="height: 32px;" class="padding-nav zoom"
+                            src="images/nav1/blog.png" alt=""></a></li>
+
+                <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom"
+                            src="images/nav1/elautor.png" alt=""></a></li>
+                <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom"
+                            src="images/nav1/contacto.png" alt=""></a></li>
+                <li>
+                </li>
+            </ul>
+
+        </nav>
+        </DIV>
+  <div class="buttons">
+
+    <div class="div-cerrar hidden">
+      <img class="cerrarDesplegable" src="Desplegables/ESP/cerrar.png">
+      <div class="cerrarFijo"></div>
+    </div>
+
+     
+    <div class="div-anterior hidden">
+      <img class="anteriorrDesplegable" src="Desplegables/ESP/Anterior.png">
+      <div class="anteriorFijo">
+      </div>
+    </div> 
+
+    <div class="div-siguiente hidden">
+      <img class="siguienteDesplegable" src="Desplegables/ESP/Siguiente.png">
+      <div class="siguienteFijo">
+      </div>
+    </div> 
+    <div class="div-compartir hidden">
+      <img class="compartirDesplegable" src="Desplegables/ESP/compartir .png">
+      <div class="compartirFijo">
+      </div>
+    </div> 
+    <div class="div-random hidden">
+      <img class="randomDesplegable" src="Desplegables/ESP/aleatorio off.png">
+      <div class="randomFijo">
+      </div>
+    </div> 
+  </div>
+
+  <div class="contenedor">
+    <main class="contenido-principal" style="display: flex;">
+  
+
+        <article class="entrada">
+            <img class="prueb" src="images/archivos/1.gif" alt="texto entrada">
+
+
+        </article>
+        <article class="entrada">
+            <img class="prueb" src="images/archivos/1.gif" alt="texto entrada">
+
+
+        </article>
+        <article class="entrada">
+            <img class="prueb" src="images/archivos/1.gif" alt="texto entrada">
+
+
+        </article>
+        <article class="entrada">
+            <img class="prueb" src="images/archivos/1.gif" alt="texto entrada">
+
+
+        </article>
+
+    </main>
+</div>
+</body>
+
+</html>
+
+<script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>

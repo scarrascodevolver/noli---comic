@@ -1,0 +1,345 @@
+.efectolupa { cursor: pointer; }
+
+.efectolupa img:hover {
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+}
+
+.efectolupa:after {
+   content: '\f002';
+    position: relative;
+    color: #ccc;
+    width: 30px;
+    height: 30px;
+    bottom: 59px;
+    left: 458px; 
+    font-family: FontAwesome;
+    font-style: normal;
+    opacity: 0.8;
+    font-size: 18px;
+}
+ .product{
+   height: 450px;
+   
+ }
+ img.zoom {
+   
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  -o-transition: all .1s ease-in-out;
+  -ms-transition: all .1s ease-in-out;
+}
+
+.transition {
+  -webkit-transform: scale(1.1); 
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+body {
+    
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+  
+    background-color: #fcffe8;
+  
+  }
+  html{
+  }
+  .contenedor {
+    padding-top: 1%;
+    margin-top: -50px;
+  }
+  
+  
+  .f0{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  
+  .f1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+  .header{
+    padding-top: 1%;
+    
+    display: flex;
+    justify-content: center;
+  
+  }
+  .header img{
+    height: 90px;
+  }
+  .nav1{
+    justify-content: center;
+    display: flex;
+    
+  }
+  .nav1 ul li a img{
+    height: 32px;
+  
+  
+  }
+  .nav1 ul li{
+    list-style-type: none;
+  }
+  .nav1 ul li {
+    display: inline-block;
+    
+  
+  }
+  
+  .english{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-right: 20px;
+  }
+  
+  
+  .english {
+    height: 20px;
+  }
+  .nav2{
+    display: flex;
+    flex-wrap: wrap;
+    padding:3px
+    
+  }
+  .nav2 ul li a img{
+    height: 32px;
+    
+  
+  }
+  .nav2 ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    font-weight: bold;
+    padding: 8px;
+  }
+  .nav2 ul li {
+    display: inline-block;
+    
+  
+  }
+  
+
+  h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin:0;
+    font-weight: 700;
+  
+  }
+  img {
+    max-width: 100%;
+  }
+  .contenido {
+    background-color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  
+  }
+  
+  .contenido h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+  }
+  
+  .contenido span {
+    color:#db008d;
+  }
+  .boton {
+    background-color: #008fd1;
+    color: white;
+    padding: .6rem 2rem;
+    margin-top: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .footer{
+    text-align: center;
+    margin-top: -50px;
+
+  }
+  .pay img{
+    height: 45px;
+  }
+  .rrss{
+    justify-content: center;
+    display: flex;
+  }
+  .rrss img{
+    text-align: center;
+    
+    height: 30px;
+  
+  }
+  
+  .p{
+   background-color: #fcffe8;
+  
+  }
+  .fb-xfbml-parse-ignore{
+  height: 50px;
+  width: 500px;
+  }
+  
+  
+  
+  .btn-tiendita{
+    
+    height: 250px;
+    width: 250px;
+    background-image: url('images/SHOP/Imagenes Preview/Poleras-3.jpg');
+    background-size: cover;
+  }
+  
+  .overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+     visibility: hidden; 
+  
+  }
+  .overlay.active{
+    visibility: visible;
+  }
+  .popup{
+   background-image: url('images/SHOP/BG.jpg');
+   background-size: cover;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.3);
+    border-radius: 4px;
+    padding: 3px;
+    width: 900px;
+    height: 500px;
+    transition: 0.2s ease all;
+  
+   
+  }
+  .popup .btn-cerrar-popup{
+    font-size: 25px;
+    line-height: 0px;
+    display: block;
+    text-align: right;
+    color: #bbbbbB;
+    transition: .1s ease all;
+  
+  }
+  
+  .popup .btn-cerrar-popup:hover{
+    color: #000;
+  }
+
+/*   .producto{
+    justify-content: left;
+    background-image: url('images/SHOP/Imagenes Preview/tazas-4.jpg');
+    background-size: cover;
+    height: 400px;
+    width: 410px;
+  
+  } */
+  .buttons{
+    
+  }
+  .buttons img{
+    padding:5px
+    
+  }
+button{
+  border: 0px;
+}
+  
+.producto1{
+  
+}
+  .text{
+    float: right;
+    display: flex;
+    align-items: center;
+    word-break:break-all;
+    margin: 0 0 1em 1em;
+    text-align: center;
+}
+  
+  .desc-producto{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: left;
+      margin-left: 50px;
+      width: 500px;
+      margin-top: 90px;
+      margin-left: 120px;
+    
+  }
+  .btn-buy{
+    background-color:#344fa1;
+    border: 0 solid  black;
+    height: 40px;
+    padding: 12px;
+    font-weight: bold;
+    margin-top: 12px;
+    margin-left: 50px;
+    margin-bottom: 110px;
+  }
+    
+
+  @media screen and (min-width:450px) {
+    .contenido-principal {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+  
+  
+  }
+  @media screen and (min-width:480px) {
+    .contenido-principal {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+  
+  
+  }
+  
+  @media screen and (min-width:768px) {
+    .contenido-principal {
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+  }
+  }
+   @media screen and (min-width:1024px) {
+    .contenido-principal {
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+      
+  }
+  .entrada
+  {
+      display: flex;
+      background-size: cover;
+      flex-direction: row;
+      
+  }
+
+  }

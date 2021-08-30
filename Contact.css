@@ -1,0 +1,305 @@
+
+   textarea{
+    width: 300px;
+     padding: 5px;
+    border-radius: 5px;
+    float: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+
+
+
+.form{
+    width: 315px;
+}
+
+
+
+img.zoom {
+   
+    -webkit-transition: all .1s ease-in-out;
+    -moz-transition: all .1s ease-in-out;
+    -o-transition: all .1s ease-in-out;
+    -ms-transition: all .1s ease-in-out;
+  }
+  
+  .transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+
+
+
+
+
+
+
+
+
+body {
+    
+    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive;
+    background-color: #fcffe8;
+
+
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.f0{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.f1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.header{
+    padding-top: 1%;
+
+    display: flex;
+    justify-content: center;
+    
+  
+}
+.header img{
+    height: 90px;
+}
+.nav1{
+    margin-left: 2rem;
+    justify-content: center;
+    display: flex;
+    height: 135px;
+}
+.nav1 ul li a img{
+
+
+}
+.nav1 ul li{
+    list-style-type: none;
+}
+.nav1 ul li {
+    display: inline-block;
+    
+
+}
+
+#imgAnimate:hover{
+
+}
+.nav{
+  margin-bottom: 100px;
+  position: relative;
+}
+
+
+.english{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+.english img{
+    height: 20px;
+}
+h2 {
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 1.6rem;
+}
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    margin:0;
+    font-weight: 700;
+
+}
+
+.contenido {
+    background-color: white;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+
+}
+
+.contenido h3 {
+    text-align: center;
+    font-size: .9rem;
+    line-height: 1.4rem;
+}
+
+.contenido span {
+    color:#db008d;
+}
+.button1 {
+    background-color: #387cbd; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    width: 140px;
+    border-radius: 5px;
+
+}
+.footer{
+    text-align: center;
+    top: 80%;
+    width: 100%;
+}
+.pay img{
+    height: 45px;
+}
+.rrss{
+
+justify-content: center;
+    display: flex;
+}
+.rrss img{
+    text-align: center;
+
+height: 30px;
+
+}
+
+textarea{
+    width: 300px;
+ padding: 5px;
+    border-radius: 5px;
+    float: center;
+    font-family: sans-serif;
+    font-size: 13px;
+}
+input{
+    height: 25px;
+ border-radius: 5px;
+ border-style: solid;
+ border-width: 1px;
+ justify-content: left;
+ padding-left: 5px;
+ width: 300px;
+/*  
+ border-width: 1px;
+ height: 35px;
+ justify-content: left;
+ padding-left: 5px; */
+}
+
+@media screen and (min-width:480px) {
+    .contenido-principal {
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+    }
+    .entrada {
+        flex: 0 1 calc(50% - 1rem);
+
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .entrada {
+        flex: 0 1 calc(25% - 1rem);
+    }
+}
+ @media screen and (min-width:1024px) {
+    .entrada {
+      background-color: rebeccapurple;
+    }
+}
+
+ 
+
+ @media screen and (min-width:2560px ){
+     .contenedor{
+         margin-top: 4%;
+     }
+     h2{
+         font-size: 2.4rem;
+     }
+     p{
+         font-size: 1.6rem;
+     }
+     .footer{
+         margin-top: 5%;
+     }
+     .form{
+         width: 600px;
+     }
+     input{
+         width: 600px;
+     }
+     textarea{
+        width: 600px;
+
+     }
+     .button1{
+         width: 200px;
+     }
+ }
+ 
+/* OTROOEVRLAY 3*/
+
+.overlay3{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    z-index: 100;
+    }
+    .overlay3.active{
+    visibility: visible;
+    }
+    .popup3{
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.3);
+    border-radius: 4px;
+    padding: 3px;
+    width: 1000px;
+    height: 600px;
+    transition: 0.2s ease all;
+    
+    
+    }
+    .popup3 .btn-cerrar-popup3{
+    font-size: 25px;
+    line-height: px;
+    display: block;
+    text-align: right;
+    color: #bbbbbB;
+    transition: .1s ease all;
+    
+    }
+    
+    .popup3 .btn-cerrar-popup3:hover{
+    color: #000;
+    }
+    .popup3.active{opacity: 1; transform: scale(1);}
+    .cosa{
+        position: relative;
+        z-index: 100;
+        }
+        .padding-nav{
+           margin-bottom: 7.2rem;
+          
+          }
