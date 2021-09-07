@@ -656,19 +656,11 @@ visibility: hidden;
 }
 
 #imgAnimate{
-/*   height: 50px;
 
- */
 
 }
 
-/* .wea{
-  margin-bottom: -111px;
-}
-.wea2{
-  margin-bottom: 0%;
 
-} */
 
 @media screen and (min-width:2560px ) and (min-height: 1440px){
     body{
@@ -752,13 +744,4 @@ visibility: hidden;
   position: relative;
   z-index: 0;
 }
-/* 
-<!-- BUTTON ---------------------------------------------------------------------------->
-<li style="margin-left: 20px;" >
-<img style="margin-bottom: 123px;" height="7px" src="img/nav1/Punto.png" alt="" class="zoom">
-        <button style=" background-color: transparent ; border: none; width: 160px; padding-bottom: 110px;" id="btn-abrir-popup3">
-            <img  style="margin-bottom: -8px;" height="155px"  class="zoom content" id="imgAnimate"  src="img/nav1/Suscribetes2.png" alt="">
-        </button>
-</li> */
 
-    

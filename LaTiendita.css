@@ -59,7 +59,7 @@ html{
   justify-content: center;
   display: flex;
   height: 90px;
-  
+  margin-left: 1.3rem;
 }
 
 .nav ul{
