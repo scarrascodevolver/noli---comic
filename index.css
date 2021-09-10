@@ -738,25 +738,77 @@ visibility: hidden;
 
 }
 @media screen and (max-width:1024px) {
+  body{
+  }
+  .f0{
+    display: none;
+  }
+  #personaje{
+    display: none
+  }
 
-.f0{
-/*     background-color:brown;
-*/  }
-.header{
-  display: flex;
-  flex-wrap: wrap;
-}
-.log1{
-  margin-right: 110px;
-}
-.container{
+  .mroja{
+    display: none;
+  }
+  .mverde{
+    display: none;
+  }
+  .mblanca{
+    display: none;
+  }
+  .mazul{
+    display: none;
+  }
+  #f1{
+    display: none;
+  }
+  
+  #imgNav1{
+   margin-bottom: 0;
+ }
+ #imgAnimate{
+   margin-bottom: 0;
+ }
+ #btn-abrir-popup3{
+   display: none;
+ }
+ .nav1{
+   display: none;
+ }
+ #nav2{
+   font-size: 2rem;
+   color: #878586;
+   margin-left: 4rem;
+   margin-top: 2rem;
+   display: inline-block;
+ }
 
+ #nav2 ul li a{
+   text-decoration: none;
+
+ }
+ #footer{
+   margin-top: 34rem;
+  margin-left: -2rem;
+ }
+ .header{
+   margin-left: 1rem;
+ }
+ #log1{
+  margin-left: -2rem;
 }
-.footer{
-}
-.f0{
-visibility: hidden;
-}
+ #eng{
+   margin-right: 4rem;
+   margin-top: 5px;
+ }
+ #tiendita:active{
+   color: #878586;
+ }
+ #nav2 ul li a:visited{
+   color: #878586;
+ }
+ #nav2 ul li a::before{
+  color: #878586;
 }
 
 @media screen and (max-width:320px){
