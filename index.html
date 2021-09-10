@@ -24,7 +24,7 @@
 
     <link rel="shortcut icon" href="img/noli_sonriente.png">
 
-     <script>
+    <script>
 
 
         $(document).ready(function hol(e) {
@@ -34,30 +34,30 @@
 
                 function () {
                     $(this).attr("src", "img/suscribete.gif");
-                   $(this).attr("height", "155px");
-                   $(".padding-nav").addClass("nav");
+                    $(this).attr("height", "155px");
+                    $(".padding-nav").addClass("nav");
                     $(this).addClass("cosa");
-               
-             }
+
+                }
 
             );
 
-            $( "#imgAnimate" ).mouseleave(function() {
-                setTimeout(function(){
+            $("#imgAnimate").mouseleave(function () {
+                setTimeout(function () {
                     $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
                     $(".padding-nav").removeClass("nav");
-                    $("#imgAnimate").removeClass("cosa");            
-                        },5000);
-                
+                    $("#imgAnimate").removeClass("cosa");
+                }, 5000);
+
 
             });
-         
+
 
 
 
         });
 
-        
+
     </script>
 
 
@@ -73,14 +73,14 @@
 
 
     </script>
-<script>
-    const suscribete = document.getElementById('#imgAnimate');
-    suscribete.addEventListener("mouseleave", e =>{
-        suscribete.style.border="1px solid #333";
+    <script>
+        const suscribete = document.getElementById('#imgAnimate');
+        suscribete.addEventListener("mouseleave", e => {
+            suscribete.style.border = "1px solid #333";
 
-    });
+        });
 
-</script>
+    </script>
 </head>
 
 
@@ -89,9 +89,9 @@
     <!-- HEADER -->
     <header class="header">
 
-        <a href="index.html"><img class="log1" style="padding-left: 120px;" src="images/logo1.png" alt=""></a>
+        <a href="index.html"><img id="log1" class="log1" style="padding-left: 120px;" src="images/logo1.png" alt=""></a>
 
-        <a href="#"><img style="height: 20px; margin-top: 37px;" src="images/nav1/english.png" alt=""></a>
+        <a href="#"><img id="eng" style="height: 20px; margin-top: 37px;" src="images/nav1/english.png" alt=""></a>
 
     </header>
 
@@ -99,25 +99,45 @@
     <nav class="nav1">
         <ul>
 
-            <li><a href="LaTiendita.html"><img style="height: 32px; " class="padding-nav zoom" src="images/nav1/latiendita.png" alt=""></a></li>
-            <li><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/archivos.png" alt=""> </a></li>
-        
-                                <!-- BUTTON ---------------------------------------------------------------------------->
-            <li style="margin-left: 2.5rem; background-color: transparent;" >
-          <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
-                     <button style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;" id="btn-abrir-popup3">
-                          <img  style="margin-bottom: -4px;" height="155px"  class="zoom content" id="imgAnimate"  src="img/nav1/Suscribetes2.png" alt="">
-                      </button> 
+            <li><a href="LaTiendita.html"><img id="imgNav0" style="height: 32px; " class="padding-nav zoom"
+                        src="images/nav1/latiendita.png" alt=""></a></li>
+            <li><a href="Archivos.html"><img id="imgNav1" style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/archivos.png" alt=""> </a></li>
+
+            <!-- BUTTON ---------------------------------------------------------------------------->
+            <li style="margin-left: 2.5rem; background-color: transparent;">
+                <img id="imgNav2" style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt=""
+                    class=" zoom">
+                <button
+                    style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;"
+                    id="btn-abrir-popup3">
+                    <img style="margin-bottom: -4px;" height="155px" class="zoom content" id="imgAnimate"
+                        src="img/nav1/Suscribetes2.png" alt="">
+                </button>
             </li>
 
-            <li style="margin-left: 40px;" ><a  href="Blog.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
+            <li style="margin-left: 40px;"><a href="Blog.html"><img id="imgNav3" style="height: 32px;"
+                        class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
 
-            <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/elautor.png" alt=""></a></li>
-            <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/contacto.png" alt=""></a></li>
+            <li><a href="Elautor.html"><img id="imgNav4" style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/elautor.png" alt=""></a></li>
+            <li><a href="Contact.html"><img id="imgNav5" style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/contacto.png" alt=""></a></li>
             <li>
             </li>
         </ul>
 
+    </nav>
+
+    <nav id="nav2">
+        <ul>
+            <li> <a id="tiendita" href="LaTiendita.html">La Tiendita</a></li>
+            <li><a href="Archivos.html">Archivos</a></li>
+            <li><a href="">Suscribete</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Elautor.css">El Autor</a></li>
+            <li><a href="Contact.html">Contacto</a></li>
+        </ul>
     </nav>
     <div id="ex1" class="containerPersonaje">
         <!-- fondo -->
@@ -128,12 +148,13 @@
         </div>
 
 
-        <!-- personaje -->
+        <!-- personaje -->  
         <div id="ex1-layer" class="box">
 
             <div class="para">
 
-                <img id="personaje" class="mover per object" data-value="-2" src="img/HOMEParalaxIllustration/personaje2C.png" alt="">
+                <img id="personaje" class="mover per object" data-value="-2"
+                    src="img/HOMEParalaxIllustration/personaje2C.png" alt="">
 
             </div>
 
@@ -141,16 +162,16 @@
         <!-- texturafrontal -->
         <div class="text">
 
-            <img src="img/HOMEParalaxIllustration/TexturaYFondo.png" alt="">
+            <img id="f1" src="img/HOMEParalaxIllustration/TexturaYFondo.png" alt="">
 
         </div>
-<!-- MANCHAS -->
+        <!-- MANCHAS -->
         <div class="manchasGenerales">
 
             <div class="manchasTop" style="">
 
                 <div class="mroja">
-                    <button  id="btn-abrir-popup" class="btnRojo">
+                    <button id="btn-abrir-popup" class="btnRojo">
 
 
                     </button>
@@ -177,7 +198,7 @@
             </div>
 
 
-          
+
 
 
 
@@ -187,7 +208,7 @@
     </div>
 
 
-    <footer class="footer" >
+    <footer id="footer" class="footer">
         <div class="pay">
 
         </div>
@@ -216,11 +237,12 @@
 
     <div class="overlay" id="overlay">
         <div class="popup" id="popup">
-            <a href="index.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i id="close" class="close fas fa-times"></i></a>
+            <a href="index.html" id="btn-cerrar-popup" class="btn-cerrar-popup"><i id="close"
+                    class="close fas fa-times"></i></a>
             <div id="myVideo" class="video-responsive video" style="display: flex;">
 
-                <iframe id="video1" title="vimeo-player1" src="https://player.vimeo.com/video/281459397" width="1000" height="600"
-                    frameborder="0" allowfullscreen></iframe>
+                <iframe id="video1" title="vimeo-player1" src="https://player.vimeo.com/video/281459397" width="1000"
+                    height="600" frameborder="0" allowfullscreen></iframe>
             </div>
         </div>
         <script class="btn" src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> hihh</script>
@@ -265,7 +287,7 @@
             <script src="popup.js"></script>
 
         </div>
-        <script  src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> </script>
+        <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> </script>
 
         <script>
             kofiWidgetOverlay.draw('nolicomic', {
@@ -288,7 +310,8 @@
                         <h2 style="color:lightblue">Obten mi ebook Gratis</h2>
                     </div>
                     <div>
-                        <p style="color: white; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum,
+                        <p style="color: white; font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Voluptatum,
                             iure! Esse cum iusto eius? Suscipit unde aliquam quis, quisquam, quam ipsum exercitationem
                             consectetur quia explicabo voluptas possimus expedita impedit doloremque!</p>
                     </div>

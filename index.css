@@ -11,7 +11,7 @@ img.zoom {
 #body {
     position: fixed;
     font-family: 'Comic Neue', cursive;
-
+  
 }   
 .transition {
   -webkit-transform: scale(1.1); 
@@ -461,39 +461,219 @@ color: #000;
 .popup3.active{opacity: 1; transform: scale(1);}
 
 .popup.active{opacity: 1; transform: scale(1);}
-
+#nav2{
+  display: none;
+}
 @media screen and (max-width:375px) {
 body{
    }
- .mroja{
-   height: 100px;
- }
-.f0{
+   #personaje{
+     display: none
+   }
+
+   .mroja{
+     display: none;
+   }
+   .mverde{
+     display: none;
+   }
+   .mblanca{
+     display: none;
+   }
+   .mazul{
+     display: none;
+   }
+   #f1{
+     display: none;
+   }
+   
+   #imgNav1{
+    margin-bottom: 0;
+  }
+  #imgAnimate{
+    margin-bottom: 0;
+  }
+  #btn-abrir-popup3{
+    display: none;
+  }
+  .nav1{
+    display: none;
+  }
+  #nav2{
+    font-size: 2rem;
+    color: #878586;
+    margin-left: 4rem;
+    margin-top: 2rem;
+    display: inline-block;
+  }
+
+  #nav2 ul li a{
+    text-decoration: none;
+
+  }
+  #footer{
+    margin-left: -2rem;
+  }
+  .header{
+    margin-left: -2rem;
+  }
+  #log1{
+    margin-left: -3.5rem;
+  }
+  #eng{
+    margin-top: 5px;
+    margin-right: 3.3rem;
+  }
+  #tiendita:active{
+    color: #878586;
+  }
+  #nav2 ul li a:visited{
+    color: #878586;
+  }
+
+}
+@media screen and (max-width:411px ){
+  body{
+  }
+
+  #personaje{
+    display: none
+  }
+
+  .mroja{
+    display: none;
+  }
+  .mverde{
+    display: none;
+  }
+  .mblanca{
+    display: none;
+  }
+  .mazul{
+    display: none;
+  }
+  #f1{
+    display: none;
+  }
   
+  #imgNav1{
+   margin-bottom: 0;
+ }
+ #imgAnimate{
+   margin-bottom: 0;
+ }
+ #btn-abrir-popup3{
+   display: none;
+ }
+ .nav1{
+   display: none;
+ }
+ #nav2{
+   font-size: 2rem;
+   color: #878586;
+   margin-left: 4rem;
+   margin-top: 2rem;
+   display: inline-block;
+ }
+
+ #nav2 ul li a{
+   text-decoration: none;
+
+ }
+ #footer{
+  margin-left: -2rem;
+ }
+ .header{
+   margin-left: 1rem;
+ }
+ #log1{
+  margin-left: -2rem;
 }
-.container{
-  margin-top: 80%;
+ #eng{
+   margin-right: 4rem;
+   margin-top: 5px;
+ }
+ #tiendita:active{
+   color: #878586;
+ }
+ #nav2 ul li a:visited{
+   color: #878586;
+ }
+ #nav2 ul li a::before{
+  color: #878586;
+}
 
 }
-.header{
-  display: flex;
-  flex-wrap: wrap;
-}
-.log1{
-  margin-right: 110px;
-}
+@media screen and (max-width:768px ){
+  body{
+  }
 
-.container{
+  #personaje{
+    display: none
+  }
 
-}
-.footer{
-/* margin-top: 500px
- */}
-.f0{
-visibility: hidden;
-}
-}
+  .mroja{
+    display: none;
+  }
+  .mverde{
+    display: none;
+  }
+  .mblanca{
+    display: none;
+  }
+  .mazul{
+    display: none;
+  }
+  #f1{
+    display: none;
+  }
+  
+  #imgNav1{
+   margin-bottom: 0;
+ }
+ #imgAnimate{
+   margin-bottom: 0;
+ }
+ #btn-abrir-popup3{
+   display: none;
+ }
+ .nav1{
+   display: none;
+ }
+ #nav2{
+   font-size: 2rem;
+   color: #878586;
+   margin-left: 4rem;
+   margin-top: 2rem;
+   display: inline-block;
+ }
 
+ #nav2 ul li a{
+   text-decoration: none;
+
+ }
+ #footer{
+  margin-left: -2rem;
+ }
+ .header{
+   margin-left: 1rem;
+ }
+ #log1{
+  margin-left: -2rem;
+}
+ #eng{
+   margin-right: 4rem;
+   margin-top: 5px;
+ }
+ #tiendita:active{
+   color: #878586;
+ }
+ #nav2 ul li a:visited{
+   color: #878586;
+ }
+ #nav2 ul li a::before{
+  color: #878586;
+}
 
 @media screen and (max-width:480px) {
 
@@ -513,37 +693,12 @@ visibility: hidden;
 }
 }
 
-@media screen and (max-width:600px) {
+
+
+/* @media screen and (max-width:768px) {
 body{
-/*      background-color: blue;
-*/ 
-}
-.f0{
-  
-}
-.header{
-  display: flex;
-  flex-wrap: wrap;
-}
-.log1{
-  margin-right: 110px;
-}
 
-.container{
-
-}
-.footer{
-/* margin-top: 500px;
- */}
-.f0{
-visibility: hidden;
-}
-}
-
-@media screen and (max-width:768px) {
-body{
-/*      background-color: aqua;
-*/   }
+   }
 .f0{
   
 }
@@ -564,12 +719,11 @@ body{
   margin-top: 50%;
 
 }
-.footer{
-/* margin-top: 500px;
- */}
+
 .f0{
 visibility: hidden;
-}
+} */
+
 }
 @media screen and (min-width:1920px ) and (min-height: 1080px){
   body{
