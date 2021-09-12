@@ -9,58 +9,35 @@
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
     <link rel="stylesheet" href="Contact.css">
-    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap"
-        rel="stylesheet">
+<!--     <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,400;0,700;1,300&display=swap"
+        rel="stylesheet"> -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
 
         <link rel="shortcut icon" href="img/noli_sonriente.png">
-        <script>
-            $(document).ready(function () {
-                $('.zoom').hover(function () {
-                    $(this).addClass('transition');
-                }, function () {
-                    $(this).removeClass('transition');
-                });
+        <link rel="stylesheet" href="noli-font.css">
+         <!-- ANIMACION SUSCRIBETE -->
+    <script>
+        $(document).ready(function hol(e) {
+
+            $("#imgAnimate").hover(
+                function () {
+                    $(this).attr("src", "img/suscribete.gif");
+                    $(this).attr("height", "155px");
+                    $(".padding-nav").addClass("nav");
+                    $(this).addClass("cosa");
+                }
+            );
+            $("#imgAnimate").mouseleave(function () {
+                setTimeout(function () {
+                    $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                    $(".padding-nav").removeClass("nav");
+                    $("#imgAnimate").removeClass("cosa");
+                }, 5000);
             });
-        </script>
-        <script>
 
-
-            $(document).ready(function hol() {
-            
-            
-                $("#imgAnimate").hover(
-   
-                                function () {
-                                    $(this).attr("src", "img/suscribete.gif");
-                                $(this).attr("height", "155px");
-                                $(".padding-nav").addClass("nav");
-                                    $(this).addClass("cosa");
-                        /*                  
-                        *//*                     $(this).addClass("wea");
-                        */                    changeImg();
-                                }
-            
-                );
-                                    function changeImg() {
-                                        setTimeout(function () {
-                                            $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
-                                            $(".padding-nav").removeClass("nav");
-                                            $("#imgAnimate").removeClass("cosa");
-                                
-                                        /*     $("#imgAnimate").removeClass("wea") */
-                                    /*      $(this).addClass("wea2"); */
-                                
-                                
-                                        }, 7000);
-                                    }
-                    
-                    
-                    
-                    });
-            
-            </script>
+        });
+    </script>
         
 </head>
 
@@ -106,17 +83,17 @@
 
             </div>
             <center>
-                <h2 style="font-family: 'Comic Neue', cursive;">Hola, ¡habla conmigo!</h2>
+                <h2>Hola, ¡habla conmigo!</h2>
            
                 <form class="form"  action="">
                     <p style="text-align: center;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Atque accusantium quis ratione vitae consequuntur numquam tempora reiciendis rerum dignissimos minus exercitationem, quo labore ex quasi, placeat veritatis deserunt harum dolor!</p>
 
-                    <input style="font-family: 'Comic Neue', cursive;" type="text" placeholder="Ingresa tu Nombre">
+                    <input type="text" placeholder="Ingresa tu Nombre">
 
                     <br><br>
-                    <input style="font-family: 'Comic Neue', cursive;" type="text" placeholder="Ingresa tu email">
+                    <input type="text" placeholder="Ingresa tu email">
                     <br><br>
-                    <textarea style="font-family: 'Comic Neue', cursive; font-size: 16px;" name="" id="" cols="30" rows="10"
+                    <textarea name="" id="textArea" cols="30" rows="10"
                         placeholder="Ingresa tu mensaje"></textarea>
                     <br><br>
                     <button class="button1">
@@ -130,7 +107,7 @@
 
 
         </div>
-        <footer style="margin-top: 3%;"class="footer">
+        <footer class="footer">
             <div class="pay">
                 <script class="btn" src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'> hihh </script>
 

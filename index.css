@@ -10,7 +10,6 @@ img.zoom {
 } */
 #body {
     position: fixed;
-    font-family: 'Comic Neue', cursive;
   
 }   
 .transition {
@@ -115,7 +114,6 @@ body{   background-color:#fcffe8;
 
 
 .text h1{
-  font-family:  Verdana, sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +183,6 @@ z-index: 50;
   text-align: center;
   padding-left: 1%;
   position: relative;
-  font-family: 'Comic Neue', cursive;
 }
 
 .nav1 img{
@@ -250,7 +247,7 @@ z-index: 40;
 
 }
 .manchasTop{
-  position: relative; 
+  position: absolute; 
 }
 .manchasBot{
   position: relative; 
@@ -270,14 +267,17 @@ z-index: 40;
     max-width: 100%;
    margin-left: -20px;
    margin-top: -55px;
+    position: relative;
+    z-index: 80;
+
+
   } 
   
 .btnRojo{
   
-  height: 440px;
+  height: 370px;
   width: 450px;
   position: absolute;
-  z-index: 80;;
    opacity: 1;
    z-index: 120;
    background-image: url("img/HOMEParalaxIllustration2/ManchaRoja.png");
@@ -285,6 +285,9 @@ z-index: 40;
    background-repeat: no-repeat;
    background-color: transparent;
    border: none;
+   clip-path: inset(15% 0 0 0);
+   
+
 }
 .btnRojo:hover{
   background-image: url("img/HOMEParalaxIllustration2/ManchaRojaON.png");
@@ -335,7 +338,6 @@ z-index: 40;
    margin-left: 0;
    height: 430px;
    width: 400px;
-
    background-image: url("img/HOMEParalaxIllustration2/ManchaVerde.png");
    background-size: 430px;
    background-repeat: no-repeat;
@@ -344,7 +346,7 @@ z-index: 40;
   margin-left: 0;
   height: 430px;
   width: 400px;
-  background-image: url("img/HOMEParalaxIllustration/ManchaVerdeON.png");
+  background-image: url("img/HOMEParalaxIllustration2/ManchaVerdeON.png");
   background-size: 430px;
   background-repeat: no-repeat;
 }

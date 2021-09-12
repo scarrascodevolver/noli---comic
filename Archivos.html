@@ -7,64 +7,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <title>Document</title>
-    <script src="isotopo.js"></script>
-    <link rel="stylesheet" href="Archivos.css">
+    <title>Noli Web</title>
     <link rel="shortcut icon" href="img/noli_sonriente.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-    <script>
-        $(document).ready(function () {
-            $('.zoom').hover(function () {
-                $(this).addClass('transition');
-            }, function () {
-                $(this).removeClass('transition');
-            });
-        });
-    </script>
-     <script>
-
-
-        $(document).ready(function hol() {
-
-
-            $("#imgAnimate").hover(
-
-
-                function () {
-                    $(this).attr("src", "img/suscribete.gif");
-                   $(this).attr("height", "155px");
-                   $(".padding-nav").addClass("nav");
-                    $(this).addClass("cosa");
-/*                  
- *//*                     $(this).addClass("wea");
- */                    changeImg();
-                }
-
-            );
-            function changeImg() {
-                setTimeout(function () {
-                    $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
-                    $(".padding-nav").removeClass("nav");
-                    $("#imgAnimate").removeClass("cosa");
-
-                /*     $("#imgAnimate").removeClass("wea") */
-               /*      $(this).addClass("wea2"); */
-
-
-                }, 7000);
-            }
-
-
-
-        });
-        
-    </script>
-
+    <link rel="stylesheet" href="Archivos.css">
+    <link rel="stylesheet" href="noli-font.css">
 </head>
+<script>
+    $(document).ready(function () {
+        $('.zoom').hover(function () {
+            $(this).addClass('transition');
+        }, function () {
+            $(this).removeClass('transition');
+        });
+    });
+</script> <!-- ANIMACION SUSCRIBETE -->
+<script>
+    $(document).ready(function hol(e) {
+
+        $("#imgAnimate").hover(
+            function () {
+                $(this).attr("src", "img/suscribete.gif");
+                $(this).attr("height", "155px");
+                $(".padding-nav").addClass("nav");
+                $(this).addClass("cosa");
+            }
+        );
+        $("#imgAnimate").mouseleave(function () {
+            setTimeout(function () {
+                $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                $(".padding-nav").removeClass("nav");
+                $("#imgAnimate").removeClass("cosa");
+            }, 5000);
+        });
+
+    });
+</script>
+
+
 
 <body>
+
+
     <img class="f1" style="position: fixed;" src="images/TexturaYFondo.png" alt="">
     <header class="header">
 
@@ -72,65 +57,82 @@
         <div class="english">
             <img src="images/nav1/english.png" alt="">
         </div>
-    </header>  
-      <!-- NAV1 -->
+    </header>
+    <!-- NAV1 -->
     <nav class="nav1">
         <ul>
 
-            <li><a href="LaTiendita.html"><img style="height: 32px; " class="padding-nav zoom" src="images/nav1/latiendita.png" alt=""></a></li>
-            <li><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/archivos.png" alt=""> </a></li>
-        
-                                <!-- BUTTON ---------------------------------------------------------------------------->
-            <li style="margin-left: 2.5rem; background-color: transparent;" >
-          <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
-                     <button onclick="hola()" style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;" id="btn-abrir-popup3">
-                          <img  style="margin-bottom: -4px;" height="155px"  class="zoom content" id="imgAnimate"  src="img/nav1/Suscribetes2.png" alt="">
-                      </button> 
+            <li><a href="LaTiendita.html"><img style="height: 32px; " class="padding-nav zoom"
+                        src="images/nav1/latiendita.png" alt=""></a></li>
+            <li style="margin-right: -25px;" ><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/archivos.png" alt=""> </a></li>
+
+            <!-- BUTTON ---------------------------------------------------------------------------->
+            <li style="margin-left: 2.5rem; background-color: transparent;">
+                <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
+                <button onclick="hola()"
+                    style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;"
+                    id="btn-abrir-popup3">
+                    <img style="margin-bottom: -4px;" height="155px" class="zoom content" id="imgAnimate"
+                        src="img/nav1/Suscribetes2.png" alt="">
+                </button>
             </li>
 
-            <li style="margin-left: 40px;" ><a  href="Blog.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
+            <li style="margin-left: 20px;"><a href="Blog.html"><img style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/blog.png" alt=""></a></li>
 
-            <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/elautor.png" alt=""></a></li>
-            <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/contacto.png" alt=""></a></li>
+            <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/elautor.png"
+                        alt=""></a></li>
+            <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom"
+                        src="images/nav1/contacto.png" alt=""></a></li>
             <li>
             </li>
         </ul>
 
     </nav>
 
- <script>
-    function hola()
-    {
+    <script>
+        function hola() {
 
-        var btnAbrirPopup3= document.getElementById('btn-abrir-popup3'),  
-    overlay3 = document.getElementById('overlay3'),
-    popup3 = document.getElementById('popup3'),
-    btnCerrarPopup3 = document.getElementById('btn-cerrar-popup3');
-
+            var btnAbrirPopup3 = document.getElementById('btn-abrir-popup3'),
+                overlay3 = document.getElementById('overlay3'),
+                popup3 = document.getElementById('popup3'),
+                btnCerrarPopup3 = document.getElementById('btn-cerrar-popup3');
 
 
-btnAbrirPopup3.addEventListener('click', function(){
-    overlay3.classList.add('active');
-/*     alert("holaaaaaaa") */
-    
-})
 
-btnCerrarPopup3.addEventListener('click', function(){
-    overlay3.classList.remove('active');
+            btnAbrirPopup3.addEventListener('click', function () {
+                overlay3.classList.add('active');
+                /*     alert("holaaaaaaa") */
 
-})
+            })
+
+            btnCerrarPopup3.addEventListener('click', function () {
+                overlay3.classList.remove('active');
+
+            })
 
 
-    }
-</script> 
+        }
+    </script>
 
 
     <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter="*">Todo</button>
-        <button class="button" data-filter=".beach">Cómic</button>
-        <button class="button" data-filter=".bird">Ilustraciones</button>
-        <button class="button" data-filter=".boat">StoryBoard</button>
-        <button class="button" data-filter=".lighthouse">Animación</button>
+        <button class="button is-checked" data-filter="*">
+            <h2>Todo</h2>
+        </button>
+        <button class="button" data-filter=".beach">
+            <h2>Cómic</h2>
+        </button>
+        <button class="button" data-filter=".bird">
+            <h2>Ilustraciones</h2>
+        </button>
+        <button class="button" data-filter=".boat">
+            <h2>StoryBoard</h2>
+        </button>
+        <button class="button" data-filter=".lighthouse">
+            <h2>Animación</h2>
+        </button>
         <!--    <button class="button" data-filter=".people">people</button>
         <button class="button" data-filter=".rock">rock</button>
         <button class="button" data-filter=".sea">sea</button> -->
@@ -281,7 +283,7 @@ btnCerrarPopup3.addEventListener('click', function(){
     </footer>
     <!-- OVERLAY 3 -->
     <div class="overlay3" id="overlay3">
-        <div style="margin-bottom: 7%;"  class="popup3" id="popup3">
+        <div style="margin-bottom: 7%;" class="popup3" id="popup3">
             <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="close fas fa-times"></i></a>
             <div style=" display: flex; justify-content: center; flex-direction: row;">
 
@@ -299,15 +301,13 @@ btnCerrarPopup3.addEventListener('click', function(){
                             style="display: flex;justify-content: right; flex-direction: column; color: lightblue; width: 500px;">
 
 
-                            <input style="font-family: 'Comic Neue', cursive;" type="text"
-                                placeholder="Ingresa tu Nombre">
+                            <input type="text" placeholder="Ingresa tu Nombre">
 
                             <br><br>
-                            <input style="font-family: 'Comic Neue', cursive;" type="text"
-                                placeholder="Ingresa tu email">
+                            <input type="text" placeholder="Ingresa tu email">
                             <br><br>
-                            <textarea style="font-family: 'Comic Neue', cursive; font-size: 16px;" name="" id=""
-                                cols="30" rows="10" placeholder="Ingresa tu mensaje"></textarea>
+                            <textarea style="font-size: 16px;" name="" id="" cols="30" rows="10"
+                                placeholder="Ingresa tu mensaje"></textarea>
                             <br><br>
                             <button style="color: black; font-weight: bold;" class="button1">
                                 Enviar
@@ -330,8 +330,8 @@ btnCerrarPopup3.addEventListener('click', function(){
 </html>
 
 
-<script src="popup.js" ></script>
-<script src="isotopo.js"></script>
+<script src="popup.js"></script>
+<script src="js/isotopo.js"></script>
 <script>
 
     $(function () {
@@ -372,4 +372,3 @@ btnCerrarPopup3.addEventListener('click', function(){
         $('#all').click();
     });
 </script>
-

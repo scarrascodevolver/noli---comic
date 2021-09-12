@@ -16,7 +16,7 @@
 
     <link rel="shortcut icon" href="img/noli_sonriente.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
+    <link rel="stylesheet" href="noli-font.css">
     <script>
         $(document).ready(function () {
             $('.zoom').hover(function () {
@@ -26,44 +26,27 @@
             });
         });
     </script>
-
-<script>
-
-
-    $(document).ready(function hol() {
-
+ <!-- ANIMACION SUSCRIBETE -->
+ <script>
+    $(document).ready(function hol(e) {
 
         $("#imgAnimate").hover(
-
-
             function () {
                 $(this).attr("src", "img/suscribete.gif");
-               $(this).attr("height", "155px");
-               $(".padding-nav").addClass("nav");
+                $(this).attr("height", "155px");
+                $(".padding-nav").addClass("nav");
                 $(this).addClass("cosa");
-/*                  
-*//*                     $(this).addClass("wea");
-*/                    changeImg();
             }
-
         );
-        function changeImg() {
+        $("#imgAnimate").mouseleave(function () {
             setTimeout(function () {
                 $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
                 $(".padding-nav").removeClass("nav");
                 $("#imgAnimate").removeClass("cosa");
-
-            /*     $("#imgAnimate").removeClass("wea") */
-           /*      $(this).addClass("wea2"); */
-
-
-            }, 7000);
-        }
-
-
+            }, 5000);
+        });
 
     });
-    
 </script>
 
 

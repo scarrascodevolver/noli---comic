@@ -14,8 +14,30 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     <link rel="shortcut icon" href="img/noli_sonriente.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="noli-font.css">
 
+ <!-- ANIMACION SUSCRIBETE -->
+ <script>
+    $(document).ready(function hol(e) {
 
+        $("#imgAnimate").hover(
+            function () {
+                $(this).attr("src", "img/suscribete.gif");
+                $(this).attr("height", "155px");
+                $(".padding-nav").addClass("nav");
+                $(this).addClass("cosa");
+            }
+        );
+        $("#imgAnimate").mouseleave(function () {
+            setTimeout(function () {
+                $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                $(".padding-nav").removeClass("nav");
+                $("#imgAnimate").removeClass("cosa");
+            }, 5000);
+        });
+
+    });
+</script>
     <script>
         $(document).ready(function () {
             $('.zoom').hover(function () {

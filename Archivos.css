@@ -15,8 +15,7 @@ img.zoom {
 body {
     
     box-sizing: border-box;
-    font-family: 'Comic Neue', cursive;
-
+ 
     background-color: #fcffe8;
     
 }
@@ -93,7 +92,6 @@ h2 {
     font-size: 1.6rem;
 }
 h3 {
-    font-family: 'Libre Baskerville', serif;
     margin:0;
     font-weight: 700;
 
@@ -204,10 +202,11 @@ height: 30px;
     background-color: transparent;
     color: gray;
     font-size: 25px;
-    font-family: 'Comic Neue', cursive;
-    
+    ;
   }
-  
+  button h2{
+      font-size:2rem;
+  }
 
   
   .button:active,
@@ -217,10 +216,13 @@ height: 30px;
   
   .button-group {
     text-align: center;
-    margin-bottom: 2rem;
-    margin-top: -1rem;
+    margin-bottom: 0;
+    margin-top: -2%;
+    
   }
-
+.button{
+    margin-left: 2rem;
+}
 
   .button p{
       z-index: 70;
@@ -300,8 +302,9 @@ margin-left: 2%; }
  */
 
  @media screen and (min-width:1920px ){
-        body{
-        }
+    body{
+/*         background-color: red;
+ */    }
         #grid-container{
             margin-left: 7%;
         }
@@ -310,6 +313,7 @@ margin-left: 2%; }
         }
        
  }
+
 
  @media screen and (min-width:1366px) {
      body{

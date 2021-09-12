@@ -9,6 +9,9 @@ body {
     height: 100px;
     width: 100px;
 }
+p{
+    font-size: 1.3rem;
+}
 img.zoom {
    
     -webkit-transition: all .1s ease-in-out;

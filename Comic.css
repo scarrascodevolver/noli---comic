@@ -144,7 +144,6 @@ h2 {
     font-size: 1.6rem;
 }
 h3 {
-    font-family: 'Libre Baskerville', serif;
     margin:0;
     font-weight: 700;
 
@@ -462,14 +461,14 @@ height: 30px;
         margin-right: auto;
         opacity: 0;    
         transform:translate(0px,0px);
-        -ms-transform:translate(0px,0px); // IE 9 
-        -moz-transform:translate(0px,0px); // Firefox 
-        -webkit-transform:translate(0px,0px); // Safari and Chrome 
-        -o-transform:translate(0px,0px); // Opera 
-        -webkit-transition: all 500ms ease-in-out; // IE 9
-        -moz-transition: all 500ms ease-in-out; // Firefox
-        -ms-transition: all 500ms ease-in-out; // Safari and Chrome 
-        -o-transition: all 500ms ease-in-out; // Opera   
+        -ms-transform:translate(0px,0px); 
+        -moz-transform:translate(0px,0px); 
+        -webkit-transform:translate(0px,0px); 
+        -o-transform:translate(0px,0px); 
+        -webkit-transition: all 500ms ease-in-out; 
+        -moz-transition: all 500ms ease-in-out; 
+        -ms-transition: all 500ms ease-in-out; 
+        -o-transition: all 500ms ease-in-out; 
         z-index: 10;
 
  
@@ -478,7 +477,6 @@ height: 30px;
         background-image: url("IconosFijos/DeColor/Cerrar.png");
         background-size: 65px auto;
         background-repeat:no-repeat;
-        font-family: 'Open Sans';
         position:absolute;
         z-index: 20;
         display:block;
@@ -542,8 +540,8 @@ height: 30px;
         background-image: url("IconosFijos/DeColor/Anterior.png");
         background-size: 80px auto;
         background-repeat: no-repeat;
-        font-family: 'Open Sans';
-        position:absolute;
+/*         font-family: 'Open Sans';
+ */        position:absolute;
         z-index: 20;
         display:block;
         top: 4rem;
@@ -603,8 +601,8 @@ height: 30px;
         background-image: url("IconosFijos/DeColor/Siguiente.png");
         background-size: 80px auto;
         background-repeat: no-repeat;
-        font-family: 'Open Sans';
-        position:absolute;
+/*         font-family: 'Open Sans';
+ */        position:absolute;
         z-index: 20;
         display:block;
         top: 8.5rem;

@@ -1,0 +1,18 @@
+@font-face{
+    font-family:noli-font;
+    src: url(noli-font.ttf);
+}
+
+
+body, p, u{
+    font-family: noli-font;
+}
+h1, h2, h3, h4{
+    font-family: noli-font;
+
+}
+button p{
+    font-family: noli-font;
+    
+    
+}
