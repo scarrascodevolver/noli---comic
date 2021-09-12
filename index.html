@@ -21,49 +21,37 @@
         href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="iconos/fonts.css">
 
     <link rel="shortcut icon" href="img/noli_sonriente.png">
     <style>
-        .padding-nav{
+        .padding-nav {
             margin-bottom: 7.3rem;
         }
     </style>
+    <!-- ANIMACION SUSCRIBETE -->
     <script>
-
-
         $(document).ready(function hol(e) {
 
             $("#imgAnimate").hover(
-
-
                 function () {
                     $(this).attr("src", "img/suscribete.gif");
                     $(this).attr("height", "155px");
                     $(".padding-nav").addClass("nav");
                     $(this).addClass("cosa");
-
                 }
-
             );
-
             $("#imgAnimate").mouseleave(function () {
                 setTimeout(function () {
                     $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
                     $(".padding-nav").removeClass("nav");
                     $("#imgAnimate").removeClass("cosa");
                 }, 5000);
-
-
             });
 
-
-
-
         });
-
-
     </script>
-
 
     <script>
         $(document).ready(function () {
@@ -77,6 +65,15 @@
 
 
     </script>
+        <script>
+            $(document).ready(function () {
+                $('.zoom').hover(function () {
+                    $(this).addClass('transition');
+                }, function () {
+                    $(this).removeClass('transition');
+                });
+            });
+        </script>
     <script>
         const suscribete = document.getElementById('#imgAnimate');
         suscribete.addEventListener("mouseleave", e => {
@@ -93,9 +90,10 @@
     <!-- HEADER -->
     <header class="header">
 
-        <a href="index.html"><img id="log1" class="log1" style="padding-left: 120px;" src="images/logo1.png" alt=""></a>
+        <a href="index.html"><img id="log1" class="log1" style="" src="images/logo1.png" alt=""></a>
 
-        <a href="#"><img id="eng" style="height: 20px; margin-top: 37px;" src="images/nav1/english.png" alt=""></a>
+        <a href="#"><img id="eng" class="" style="height: 20px; margin-top: 32px;" src="images/nav1/english.png"
+                alt=""></a>
 
     </header>
 
@@ -133,8 +131,23 @@
 
     </nav>
 
-    <nav id="nav2">
+    <div class="ej">
+        <div class="menu_bar">
+            <a href="#" class="icon-menu"></a>
+        </div>
+        <nav class="navi2">
+            <ul>
+                <li><a href="#">La Tiendita</a></li>
+                <li><a href="#">Archivos</a></li>
+                <li><a href="#">Suscribete</a></li>
+                <li><a href="#">El Autor</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!-- <nav id="nav2">
         <ul>
+            <li><a class="bt-menu" href=""></a></li>
             <li> <a id="tiendita" href="LaTiendita.html">La Tiendita</a></li>
             <li><a href="Archivos.html">Archivos</a></li>
             <li><a href="">Suscribete</a></li>
@@ -142,7 +155,7 @@
             <li><a href="Elautor.html">El Autor</a></li>
             <li><a href="Contact.html">Contacto</a></li>
         </ul>
-    </nav>
+    </nav> -->
     <div id="ex1" class="containerPersonaje">
         <!-- fondo -->
         <div id="ex2-layer" class="bg mover">
@@ -152,7 +165,7 @@
         </div>
 
 
-        <!-- personaje -->  
+        <!-- personaje -->
         <div id="ex1-layer" class="box">
 
             <div class="para">
@@ -174,29 +187,39 @@
 
             <div class="manchasTop" style="">
 
-                <div class="mroja">
-                    <button id="btn-abrir-popup" class="btnRojo">
-
-
+                <div class="mroja " style="">
+                    <button id="btn-abrir-popup" class="btnRojo zoom">
+                        <div class="manchaRoja">
+                        </div>
                     </button>
-                    <img src="img/HOMEParalaxIllustration/ManchaRoja2.png" alt="">
+                    <!--                     <img id="manchaRoja" src="img/HOMEParalaxIllustration/ManchaRoja2.png" alt="">
+     -->
+
                 </div>
 
-                <div class="mblanca">
-                    <button id="btn-abrir-popup2" class="btnBlanca"></button>
-                    <img src="img/HOMEParalaxIllustration/ManchaBlanco2.png" alt="">
+                <div class="mblanca ">
+                    <button id="btn-abrir-popup2" class="btnBlanca zoom">
+                        <div class="manchaBlanca">
+                        </div>
+                    </button>
+                    <!--                     <img id="manchaBlanca" src="img/HOMEParalaxIllustration/ManchaBlanco2.png" alt="">
+ -->
                 </div>
 
             </div>
 
 
             <div class="manchasBot">
-                <div class="mverde"><a target="_blank" href="https://www.instagram.com/juan.araya.art/">
-                        <img src="img/HOMEParalaxIllustration/ManchaVerde2.png" alt=""></a>
+                <div class="mverde zoom"><a target="_blank" href="https://www.instagram.com/juan.araya.art/">
+                        <div class="manchaVerde"></div>
+                        <div class="btnVerde">
+
+                        </div>
                 </div>
-                <div class="mazul">
+                <div class="mazul zoom">
                     <a target="_blank" href="https://gumroad.com/juanarayaart/">
-                        <img src="img/HOMEParalaxIllustration/ManchaAzul2.png" alt="">
+                        <div class="btnAzul"></div>
+
                     </a>
                 </div>
             </div>
