@@ -747,7 +747,12 @@ body{
  */
 }
 @media screen and (max-width:768px ){
+    body{
+    }
+}
+@media screen and (max-width:768px ){
   body{
+
   }
 
   #personaje{
@@ -810,6 +815,64 @@ body{
  #tiendita:active{
    color: #878586;
  }
+ .menu_bar{
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 2px;
+}
+.header{
+  display: flex;
+  
+}
+#log1{
+margin-left: 0px;
+}
+
+#eng{
+ display: flex;
+ padding-left: 3.5rem;
+ 
+}
+body{
+}
+  #personaje{
+    display: none
+  }
+
+  .mroja{
+    display: none;
+  }
+  .mverde{
+    display: none;
+  }
+  .mblanca{
+    display: none;
+  }
+  .mazul{
+    display: none;
+  }
+  #f1{
+    display: none;
+  }
+  
+  #imgNav1{
+   margin-bottom: 0;
+ }
+ #imgAnimate{
+   margin-bottom: 0;
+ }
+ #btn-abrir-popup3{
+   display: none;
+ }
+ .nav1{
+   display: none;
+ }
+ .manchasGenerales{
+   display: none;
+ }
+}
+
 /*  #nav2 ul li a:visited{
    color: #878586;
  }
