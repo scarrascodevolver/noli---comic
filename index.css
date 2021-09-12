@@ -695,7 +695,9 @@ body{
   #f1{
     display: none;
   }
-  
+  .manchasGenerales{
+    display: none;
+  }
   #imgNav1{
    margin-bottom: 0;
  }
