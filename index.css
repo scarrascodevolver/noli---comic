@@ -664,6 +664,15 @@ body{
 
 }
 @media screen and (max-width:411px ){
+  .menu_bar{
+    display: block;
+    margin-top: -8rem;
+    
+  }
+  .navi2{
+    margin-left: 0.2rem;  
+    padding: 3rem;
+  }
   body{
   }
 
