@@ -577,20 +577,19 @@ color: #000;
 .animate{
   display: inline;
 }
-.eng{
-  display: none;
 
-}
+
+  #eng{
+  }
+ 
 @media screen and (max-width:375px) {
  .menu_bar{
    display: block;
    width: 100%;
    position: fixed;
-   top: 2px;
  }
  .header{
    display: flex;
-   
  }
  #log1{
 margin-left: 0px;
@@ -602,7 +601,8 @@ margin-left: 0px;
   
 }
 body{
- }
+/*   background-color: red;
+ */ }
    #personaje{
      display: none
    }
@@ -666,8 +666,9 @@ body{
 @media screen and (max-width:411px ){
   .menu_bar{
     display: block;
-    margin-top: -8rem;
-    
+/*     margin-top: -8rem;
+ */    
+ margin-left: 18rem;
   }
   .navi2{
     margin-left: 0.2rem;  
@@ -746,15 +747,34 @@ body{
 }
  */
 }
-@media screen and (max-width:768px ){
-    body{
+@media screen and (min-width:460px ){
+    .ej{
+      margin-left: 4rem;
     }
 }
+@media screen and (min-width:768px ){
+  .menu_bar{
+       margin-left: 33rem;
+     
+    }
+}
+@media screen and (max-width:360px ){
+    body{
+    }
+    .menu_bar{
+      margin-left: 16rem;
+    }
+}
+
+
+
 @media screen and (max-width:768px ){
   body{
-
-  }
-
+/*  background-color: rebeccapurple;
+ */   }
+.menu_bar{
+/*   margin-left: 33rem;
+ */}
   #personaje{
     display: none
   }
@@ -800,7 +820,8 @@ body{
 
  } */
  #footer{
-  margin-left: -2rem;
+  position: fixed;
+  left: 17em;
  }
  .header{
    margin-left: 1rem;
@@ -811,6 +832,9 @@ body{
  #eng{
    margin-right: 4rem;
    margin-top: 5px;
+   display: flex;
+   padding-left: 3.5rem;
+   
  }
  #tiendita:active{
    color: #878586;
@@ -829,11 +853,7 @@ body{
 margin-left: 0px;
 }
 
-#eng{
- display: flex;
- padding-left: 3.5rem;
- 
-}
+
 body{
 }
   #personaje{
@@ -896,7 +916,6 @@ body{
 .f0{
 visibility: hidden;
 }
-}
 
 
 
@@ -930,9 +949,18 @@ visibility: hidden;
 } */
 
 }
+@media screen and (min-width:1280px ){
+    body{
+/*        background-color: red;
+ */     }
+    .manchasGenerales{
+    margin-top: rem;
+    }
+}
 @media screen and (min-width:1920px ){
   body{
-   }
+/*     background-color: red;
+ */   }
   #imgAnimate{
 /*     background-color: greenyellow;
  */margin-bottom: 90px;  }
@@ -942,9 +970,20 @@ visibility: hidden;
  .header{
    margin-left: 132px;
  }
-
+.f0{
+}
+}
+@media screen and (max-width:1024px ){
+  body{
+/*     background-color: red;
+ */  }
+  
+  #eng2{
+    display: none;
+  }
 }
 @media screen and (max-width:1024px) {
+
   body{
   }
   .f0{
@@ -1073,7 +1112,11 @@ visibility: hidden;
 
 }
 
-
+@media screen and (min-width:540px ){
+    body{
+/*       background-color: red;
+ */    }
+}
 
 @media screen and (min-width:2560px ) and (min-height: 1440px){
     body{
@@ -1168,4 +1211,8 @@ img.zoom {
   -moz-transition: all .1s ease-in-out;
   -o-transition: all .1s ease-in-out;
   -ms-transition: all .1s ease-in-out;
+}
+
+.visi{
+display: inline;
 }

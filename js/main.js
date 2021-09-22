@@ -4,8 +4,11 @@
 
 
                 function () {
-                 
+
                     $('.navi2').toggle('animate');
+                    $('#eng').toggle('visi');
+                    $('#footer').toggle('foot');
+
 
 
                 }
