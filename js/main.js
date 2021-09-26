@@ -6,8 +6,9 @@
                 function () {
 
                     $('.navi2').toggle('animate');
-                    $('#eng').toggle('visi');
+                    $('#eng2').toggle('visi');
                     $('#footer').toggle('foot');
+                    $('.ej').toggle('foot');
 
 
 

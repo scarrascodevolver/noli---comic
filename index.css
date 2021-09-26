@@ -581,8 +581,15 @@ color: #000;
 
   #eng{
   }
- 
+ #log2{
+   height: 5rem;
+   margin-left: 3rem;
+ }
 @media screen and (max-width:375px) {
+  body, .ej{
+/*     background-color:rgb(19, 18, 18);
+ */  }
+  
  .menu_bar{
    display: block;
    width: 100%;
@@ -592,13 +599,18 @@ color: #000;
    display: flex;
  }
  #log1{
-margin-left: 0px;
+   display: none;
+  margin-left: 0px;
  }
 
- #eng{
+ #eng2{
   display: flex;
-  padding-left: 3.5rem;
+/*   background-color: blue;
+ */  margin-left: 6rem;
   
+}
+#eng{
+  display: none;
 }
 body{
 /*   background-color: red;
