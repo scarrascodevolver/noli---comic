@@ -87,9 +87,10 @@
 
         <a href="index.html"><img id="log1" class="log1" style="" src="images/logo1.png" alt=""></a>
 
-        <a href="#"><img id="eng" class="" style="display: none; height: 20px; margin-top: 32px;"
-                src="images/nav1/english.png" alt=""></a>
-
+        <a href="#"><img id="eng" class="" style=" height: 20px; margin-top: 32px;" src="images/nav1/english.png"
+                alt=""></a>
+                 <!--    <a href="#"><img id="eng2" class="" style=" height: 20px; margin-top: 32px;" src="images/nav1/english.png"
+                alt=""></a> -->
     </header>
 
     <!-- NAV1 -->
@@ -102,7 +103,7 @@
                         src="images/nav1/archivos.png" alt=""> </a></li>
 
             <!-- BUTTON ---------------------------------------------------------------------------->
-            <li style="margin-left: 2.5rem; background-color: transparent;">
+            <li style="margin-left: rem; background-color: transparent;">
                 <img id="imgNav2" style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt=""
                     class=" zoom">
                 <button
@@ -113,7 +114,7 @@
                 </button>
             </li>
 
-            <li style="margin-left: 40px;"><a href="Blog.html"><img id="imgNav3" style="height: 32px;"
+            <li style="margin-left: ;"><a href="Blog.html"><img id="imgNav3" style="height: 32px;"
                         class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
 
             <li><a href="Elautor.html"><img id="imgNav4" style="height: 32px;" class="padding-nav zoom"
@@ -127,22 +128,13 @@
     </nav>
 
     <div class="ej">
-        <img id="log2" class="log2" style="" src="images/logo1.png" alt="">
-        <a href="#"><img id="eng2" class="" style="display: none; height: 20px; margin-top: 32px;"
-            src="images/nav1/english.png" alt=""></a>
-        <div class="menu_bar">
+        <div class="barra">
+        </div>
+        <div class="menu_bar" id="btn-abrir-popup4">    
             <div style="color:#878586; ;" class="icon-menu"></div>
         </div>
-        <nav class="navi2">
-            <ul>
-                <li><a href="LaTiendita.html">La Tiendita</a></li>
-                <li><a href="Archivos.html">Archivos</a></li>
-                <li><a href="#">Suscribete</a></li>
-                <li><a href="Blog.html">Blog</a></li>
-                <li><a href="Elautor.html">El Autor</a></li>
-                <li><a href="Contact.html">Contacto</a></li>
-            </ul>
-        </nav>
+        
+ 
     </div>
     <!-- <nav id="nav2">
         <ul>
@@ -232,7 +224,9 @@
         </div>
 
     </div>
-
+    <div class="m">
+        <img src="img/archivos/3.jpg" alt="">
+    </div>
 
     <footer id="footer" class="footer">
         <div class="pay">
@@ -253,7 +247,7 @@
 
         </div>
         <div>
-            <p>Juan Araya @copy 2020 All rights reserved</p>
+            <p >Juan Araya @copy 2020 All rights reserved</p>
         </div>
 
     </footer>
@@ -327,7 +321,7 @@
     </div>
     <!-- OVERLAY 3 -->
     <div class="overlay3" id="overlay3">
-        <div class="popup3" id="popup3">
+        <div class="popup" id="popup3">
             <a href="#" id="btn-cerrar-popup3" class="btn-cerrar-popup3"><i class="close fas fa-times"></i></a>
             <div style="display: flex; justify-content: center; flex-direction: row;">
 
@@ -371,11 +365,30 @@
         </div>
 
     </div>
+    <!-- OVERLAY 4 -->
     <script src="popup.js"></script>
-    <script>
+    <div class="overlay4" id="overlay4">
+        <div class="popup4" id="popup4">
+            <a href="index.html" id="btn-cerrar-popup4" class="btn-cerrar-popup4"><i class="close fas fa-2x fa-times"></i></a>
+            <div style="display: flex; justify-content: center; flex-direction: row;">
+                <nav class="navi2">
+                    <ul>
+                        <li><a href="LaTiendita.html"> <p>La Tiendita</p> </a></li>
+                        <li><a href="Archivos.html">Archivos</a></li>
+                        <li><a href="#">Suscribete</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Elautor.html">El Autor</a></li>
+                        <li><a href="Contact.html">Contacto</a></li>
+                    </ul>
+                </nav>
+              
+            </div>
 
+        </div>
 
-    </script>
+    </div>
+    <script src="popup.js"></script>
+
 
 
 

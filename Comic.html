@@ -15,28 +15,28 @@
   <link rel="shortcut icon" href="img/noli_sonriente.png">
   <link rel="stylesheet" href="fuentes/noli-font.css">
 </head>
- <!-- ANIMACION SUSCRIBETE -->
- <script>
-  $(document).ready(function hol(e) {
+    <!-- ANIMACION SUSCRIBETE -->
+    <script>
+      $(document).ready(function hol(e) {
 
-      $("#imgAnimate").hover(
-          function () {
-              $(this).attr("src", "img/suscribete.gif");
-              $(this).attr("height", "155px");
-              $(".padding-nav").addClass("nav");
-              $(this).addClass("cosa");
-          }
-      );
-      $("#imgAnimate").mouseleave(function () {
-          setTimeout(function () {
-              $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
-              $(".padding-nav").removeClass("nav");
-              $("#imgAnimate").removeClass("cosa");
-          }, 5000);
+          $("#imgAnimate").hover(
+              function () {
+                  $(this).attr("src", "img/suscribete.gif");
+                  $(this).attr("height", "155px");
+                  $(".padding-nav").addClass("nav");
+                  $(this).addClass("cosa");
+              }
+          );
+          $("#imgAnimate").mouseleave(function () {
+              setTimeout(function () {
+                  $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                  $(".padding-nav").removeClass("nav");
+                  $("#imgAnimate").removeClass("cosa");
+              }, 5000);
+          });
+
       });
-
-  });
-</script>
+  </script>
   <script>
       $(document).ready(function () {
           $('.zoom').hover(function () {
@@ -68,17 +68,17 @@
                             src="images/nav1/archivos.png" alt=""> </a></li>
 
                 <!-- BUTTON ---------------------------------------------------------------------------->
-                <li style="margin-left: 2.5rem; background-color: transparent;">
+                <li style="margin-left: rem; background-color: transparent;">
                     <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
                     <button onclick="hola()"
                         style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;"
                         id="btn-abrir-popup3">
-                        <img style="margin-bottom: -4px;" height="155px" class="zoom content" id="imgAnimate"
+                        <img style="position: relative; z-index: 100; margin-bottom: -4px;" height="155px" class="zoom content" id="imgAnimate"
                             src="img/nav1/Suscribetes2.png" alt="">
                     </button>
                 </li>
 
-                <li style="margin-left: 40px;"><a href="Blog.html"><img style="height: 32px;" class="padding-nav zoom"
+                <li style="margin-left: ;"><a href="Blog.html"><img style="height: 32px;" class="padding-nav zoom"
                             src="images/nav1/blog.png" alt=""></a></li>
 
                 <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom"
@@ -125,7 +125,9 @@
   <div class="contenedor">
     <main class="contenido-principal" style="display: flex;">
   
-
+        <div class="barraComic">
+            <h2>ijjijpio</h2>
+        </div>
         <article class="entrada">
             <img class="prueb" src="images/archivos/1.gif" alt="texto entrada">
 

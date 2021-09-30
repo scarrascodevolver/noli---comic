@@ -5,6 +5,9 @@
     -webkit-filter: brightness(50%);
 }
 p{
+  font-size: 1.5rem;
+}
+ .f{
   font-size: 1.2rem;
 }
 h1{
@@ -174,7 +177,6 @@ body {
   .footer{
     text-align: center;
     margin-top: -50px;
-
   }
   .pay img{
     height: 45px;
@@ -299,10 +301,8 @@ button{
     border: 0 solid  black;
     height: 40px;
     padding: 12px;
-    
-    margin-top: 12px;
+    padding-bottom: 2.2rem;
     margin-left: 50px;
-    margin-bottom: 110px;
     font-size: 1.2rem;
     
   }

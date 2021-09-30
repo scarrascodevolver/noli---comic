@@ -12,6 +12,9 @@ img.zoom {
     position: fixed;
   
 }   
+.m img{
+  display: none;
+}
 .transition {
   -webkit-transform: scale(1.1); 
   -moz-transform: scale(1.1);
@@ -257,7 +260,7 @@ z-index: 40;
 
 
 
-.manchaVerde{
+.manchaRoja{
   background-image: url("img/HOMEParalaxIllustration2/ManchaRoja.png");
   background-size: 440px;
 }
@@ -285,8 +288,8 @@ z-index: 40;
    background-repeat: no-repeat;
    background-color: transparent;
    border: none;
-   clip-path: inset(15% 0 0 0);
-   
+/*    clip-path: inset(15% 0 0 0);
+ */   
 
 }
 .btnRojo:hover{
@@ -517,20 +520,82 @@ color: #000;
 }
 .popup3.active{opacity: 1; transform: scale(1);}
 
+
+/* OTROOEVRLAY 4*/
+
+.overlay4{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, .8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: hidden;
+  z-index: 100;
+  }
+  .overlay4.active{
+  visibility: visible;
+  }
+  .popup4{
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.3);
+  border-radius: 4px;
+  padding: 3px;
+  width: 1000px;
+  height: 600px;
+  transition: 0.2s ease all;
+  position: relative;
+  z-index: 10;
+  }
+  #popup4{
+    position: relative;
+    z-index: -1;
+  }
+  .popup4 .btn-cerrar-popup3{
+  font-size: 25px;
+  line-height: px;
+  display: block;
+  text-align: right;
+  color: #bbbbbB;
+  transition: .1s ease all;
+  
+  }
+  .close{
+    margin-left: 18rem;
+    margin-top: 2rem;
+    position: relative;
+    color: #bbbbbB;
+  }
+  .hide_barra{
+    display: none;
+  }
+  .popup4 .btn-cerrar-popup3:hover{
+  color: #000;
+  }
+  .popup4.active{opacity: 1; transform: scale(1);}
+  
 .popup.active{opacity: 1; transform: scale(1);}
  
 .menu_bar{
-
+  position: relative;
+  z-index: 10;
   display: none;
 } 
-
+.bye{
+  display: none;
+}
 .navi2{
-  margin-top: 8rem;
-  width: 100%;
+/*   margin-top: -6rem;
+ */  width: 100%;
   display: none;
   max-width: 100rem;
   width: 95%;
-  margin: 20px auto;
+}
+.navi2 ul li a p{
+  z-index: 30;
+
 }
 .nav2 nav ul{
   /* list-style: none; */
@@ -581,16 +646,24 @@ color: #000;
 
   #eng{
   }
- #log2{
-   height: 5rem;
-   margin-left: 3rem;
- }
+ 
 @media screen and (max-width:375px) {
-  body, .ej{
-/*     background-color:rgb(19, 18, 18);
- */  }
-  
- .menu_bar{
+ 
+  .barra{
+    margin-top: -16rem;
+    height: 17rem;
+    width: auto;
+    background-color: #405776;
+    position: relative;
+    z-index: 20;
+  } .m img{
+    height: 300px;
+    position: fixed;
+    top: 12rem;
+    left: 2rem;
+    z-index: -1;
+  }
+  .menu_bar{
    display: block;
    width: 100%;
    position: fixed;
@@ -599,18 +672,13 @@ color: #000;
    display: flex;
  }
  #log1{
-   display: none;
-  margin-left: 0px;
+margin-left: 0px;
  }
 
- #eng2{
+ #eng{
   display: flex;
-/*   background-color: blue;
- */  margin-left: 6rem;
+  padding-left: 3.5rem;
   
-}
-#eng{
-  display: none;
 }
 body{
 /*   background-color: red;
@@ -675,6 +743,13 @@ body{
   } */
 
 }
+.fond{
+  background-color: #566573;
+}
+.tra{
+  background-color: #566573;
+
+}
 @media screen and (max-width:411px ){
   .menu_bar{
     display: block;
@@ -682,7 +757,9 @@ body{
  */    
  margin-left: 18rem;
   }
+
   .navi2{
+    margin-top: 2rem;
     margin-left: 0.2rem;  
     padding: 3rem;
   }
@@ -970,6 +1047,12 @@ visibility: hidden;
     }
 }
 @media screen and (min-width:1920px ){
+  .nav1{
+    margin-left: 32rem;
+  }
+  #eng{
+    display: inline;
+  }
   body{
 /*     background-color: red;
  */   }

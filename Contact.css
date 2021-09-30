@@ -20,10 +20,7 @@
  }
 .form{
     width: 315px;
-    
-}
-.form p{
-    font-size: 1.2rem;
+    margin-bottom: 15rem;
 }
 
 
@@ -238,9 +235,20 @@ input{
  @media screen and (min-width:1920px ){
      .contenedor{
      }
-     .footer{
-         margin-top: 2%;
+     .form{
+         /* background-color: red; */
+         
      }
+    }      .rrss{
+/*           margin-top: 4rem;
+ */
+          }
+      .footer{
+          margin-top: -15rem;
+      }
+      .f{
+          margin-bottom: 1rem;
+      }
  }
 
  @media screen and (min-width:2560px ){
@@ -322,3 +330,13 @@ input{
           
           }
 
+p{
+     font-size: 1.5rem;
+    
+}
+.f{
+    font-size: 1.2rem;
+}
+.form .text-contact{
+    font-size: 1.4rem;
+}

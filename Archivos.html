@@ -22,29 +22,29 @@
             $(this).removeClass('transition');
         });
     });
-</script> <!-- ANIMACION SUSCRIBETE -->
-<script>
-    $(document).ready(function hol(e) {
-
-        $("#imgAnimate").hover(
-            function () {
-                $(this).attr("src", "img/suscribete.gif");
-                $(this).attr("height", "155px");
-                $(".padding-nav").addClass("nav");
-                $(this).addClass("cosa");
-            }
-        );
-        $("#imgAnimate").mouseleave(function () {
-            setTimeout(function () {
-                $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
-                $(".padding-nav").removeClass("nav");
-                $("#imgAnimate").removeClass("cosa");
-            }, 5000);
-        });
-
-    });
 </script>
+    <!-- ANIMACION SUSCRIBETE -->
+    <script>
+        $(document).ready(function hol(e) {
 
+            $("#imgAnimate").hover(
+                function () {
+                    $(this).attr("src", "img/suscribete.gif");
+                    $(this).attr("height", "155px");
+                    $(".padding-nav").addClass("nav");
+                    $(this).addClass("cosa");
+                }
+            );
+            $("#imgAnimate").mouseleave(function () {
+                setTimeout(function () {
+                    $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                    $(".padding-nav").removeClass("nav");
+                    $("#imgAnimate").removeClass("cosa");
+                }, 5000);
+            });
+
+        });
+    </script>
 
 
 <body>

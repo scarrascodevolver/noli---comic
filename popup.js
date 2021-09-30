@@ -53,5 +53,25 @@ btnCerrarPopup3.addEventListener('click', function(){
 
 })
 
+/* ABRIR POPUP 4 */
+
+var btnAbrirPopup4= document.getElementById('btn-abrir-popup4'),  
+    overlay4 = document.getElementById('overlay4'),
+    popup4 = document.getElementById('popup4'),
+    btnCerrarPopup4 = document.getElementById('btn-cerrar-popup4');
+
+
+
+btnAbrirPopup4.addEventListener('click', function(){
+    overlay4.classList.add('active');
+/*     alert("holaaaaaaa") */
+    
+});
+
+btnCerrarPopup4.addEventListener('click', function(){
+    overlay4.classList.remove('active');
+
+})
+
 
 

@@ -15,7 +15,6 @@ img.zoom {
 body {
     
     box-sizing: border-box;
- 
     background-color: #fcffe8;
     
 }
@@ -311,7 +310,10 @@ margin-left: 2%; }
         .header{
             margin-left: 170px;
         }
-       
+       .contenedor{
+/*            background-color: red;
+ */           width: 100rem;
+       }
  }
 
 

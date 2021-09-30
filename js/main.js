@@ -1,15 +1,15 @@
 
-        $(document).ready(function hol(e) {
+        $(document).ready(function () {
             $(".menu_bar").click(
 
 
                 function () {
 
                     $('.navi2').toggle('animate');
-                    $('#eng2').toggle('visi');
+                    $('#eng').toggle('visi');
                     $('#footer').toggle('foot');
-                    $('.ej').toggle('foot');
-
+                    $('#footer').toggle('foot');
+                    $(this).toggle('hide_barra');
 
 
                 }

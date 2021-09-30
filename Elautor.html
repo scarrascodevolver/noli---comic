@@ -22,28 +22,29 @@
             $(this).removeClass('transition');
         });
     });
-</script> <!-- ANIMACION SUSCRIBETE -->
-    <script>
-        $(document).ready(function hol(e) {
+</script>   
+  <!-- ANIMACION SUSCRIBETE -->
+<script>
+    $(document).ready(function hol(e) {
 
-            $("#imgAnimate").hover(
-                function () {
-                    $(this).attr("src", "img/suscribete.gif");
-                    $(this).attr("height", "155px");
-                    $(".padding-nav").addClass("nav");
-                    $(this).addClass("cosa");
-                }
-            );
-            $("#imgAnimate").mouseleave(function () {
-                setTimeout(function () {
-                    $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
-                    $(".padding-nav").removeClass("nav");
-                    $("#imgAnimate").removeClass("cosa");
-                }, 5000);
-            });
-
+        $("#imgAnimate").hover(
+            function () {
+                $(this).attr("src", "img/suscribete.gif");
+                $(this).attr("height", "155px");
+                $(".padding-nav").addClass("nav");
+                $(this).addClass("cosa");
+            }
+        );
+        $("#imgAnimate").mouseleave(function () {
+            setTimeout(function () {
+                $("#imgAnimate").attr("src", "img/nav1/Suscribetes2.png").attr('height', '155px').attr("width", "auto");
+                $(".padding-nav").removeClass("nav");
+                $("#imgAnimate").removeClass("cosa");
+            }, 5000);
         });
-    </script>
+
+    });
+</script>
         
 
 </head>
@@ -64,14 +65,14 @@
             <li><a href="Archivos.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/archivos.png" alt=""> </a></li>
         
                                 <!-- BUTTON ---------------------------------------------------------------------------->
-            <li style="margin-left: 2.5rem; background-color: transparent;" >
+            <li style=" background-color: transparent;" >
           <img style="margin-bottom: 8rem;" height="7px" src="img/nav1/Punto.png" alt="" class=" zoom">
                      <button onclick="hola()" style=" background-color: transparent ; border: none; height: 10rem; width: 160px; padding-bottom: 40px;" id="btn-abrir-popup3">
                           <img  style="margin-bottom: -4px;" height="155px"  class="zoom content" id="imgAnimate"  src="img/nav1/Suscribetes2.png" alt="">
                       </button> 
             </li>
 
-            <li style="margin-left: 40px;" ><a  href="Blog.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
+            <li  ><a  href="Blog.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/blog.png" alt=""></a></li>
 
             <li><a href="Elautor.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/elautor.png" alt=""></a></li>
             <li><a href="Contact.html"><img style="height: 32px;" class="padding-nav zoom" src="images/nav1/contacto.png" alt=""></a></li>

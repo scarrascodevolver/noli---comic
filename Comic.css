@@ -6,6 +6,17 @@ body {
     background-color: #faf9e2;
 
 }
+.entrada img{
+}
+#imgAnimate{
+    z-index: 80;
+}
+.barraComic{
+    height: 10rem;
+    background-color: red;
+    position: fixed;
+    z-index: 50;
+}
 img.zoom {
    
     -webkit-transition: all .1s ease-in-out;
@@ -233,7 +244,7 @@ height: 30px;
     }
     .entrada img{
         height:  800px;
-        
+        position: relative;
 
        
     } 
